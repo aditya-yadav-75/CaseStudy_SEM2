@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Review Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h2>Review Form</h2>
+
+      <form id="contactForm">
+
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" />
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" />
+
+        <label>Message</label>
+
+        <textarea
+          id="message"
+          name="message"
+          maxlength="200"
+          placeholder="Type your message"
+        ></textarea>
+
+        <div class="counter" id="counter">0 / 200</div>
+
+        <label>Department</label>
+        <select name="department">
+          <option value="">Select Department</option>
+          <option value="sales">Sales</option>
+          <option value="support">Support</option>
+          <option value="billing">Billing</option>
+        </select>
+
+        <button type="submit">Submit Form</button>
+
+        <button type="button" id="clearBtn">Clear Saved Data</button>
+
+        <p id="status"></p>
+
+      </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+  
+</html>
